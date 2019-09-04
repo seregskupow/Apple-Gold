@@ -1,0 +1,96 @@
+@import "variables";
+
+#crue{
+
+    & .crue_container{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 300px;
+
+        & .crue_title{
+            overflow:hidden;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 100px;
+            position: relative;
+            & h1{
+                color: $lightgold;
+                font-size:150px;
+                font-family: 'Alfa Slab One', cursive;
+            }
+
+            & .line{
+                position: absolute;
+                top: 90%;
+                height: 2px;
+                width: 60%;
+                background: $golden;
+                left: 50%;
+                transform:translateX(-50%);
+                transform-origin: right;
+            }
+        }
+
+        & .crue_row{
+
+            & .crue_col{
+                margin-bottom: 30px;
+                height: 500px;
+                overflow:hidden;
+                & h2{
+                    text-align: center;
+                    background-color: $golden;
+                    border-radius: 5px;
+                    text-transform:uppercase;
+                    font-family: 'Alfa Slab One', cursive;
+                    color:$grey;
+
+                }
+                & img{
+                    width: 100%;
+                    max-height: 500px;
+                    object-fit: cover;
+                }
+                & h2:nth-of-type(2){
+                    transform:translateY(-120px);
+                    padding-bottom: 400px;
+                    padding-top: 20px;
+                    border:1px solid $golden;
+                    width: 70%;
+                    margin:0 auto;
+                    font-size: 40px;
+                    background-color: $golden;
+                    background-image: radial-gradient($grey 15%, transparent 5%);
+                    background-position: 0 0, 20px 20px;
+                    background-size: 20px 20px;
+                    color: $grey;
+                    
+                    
+
+                }
+
+                & .about{
+                    transform:translateY(-516px);
+                    background: $grey;
+                    width: 90%;
+                    margin:0 auto;
+                    border-radius: 5px;
+                    border:1px solid $golden;
+                    color: $lightgold; 
+                    padding-bottom: 150px;
+
+                    & .about_wrap{
+                        padding: 10px;
+                        
+                    }
+                }
+               
+            }
+        }
+    }
+}
+a{
+    text-decoration:none!important;
+}

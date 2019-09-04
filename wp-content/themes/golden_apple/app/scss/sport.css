@@ -1,0 +1,16 @@
+#sport_section .main_wrap {
+  width: 50%;
+  margin: 0 auto;
+  padding: 200px 0;
+}
+
+#sport_section .main_wrap h1 {
+  color: #eeb111;
+  font-size: 100px;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+#sport_section .main_wrap p {
+  font-size: 20px;
+}
+/*# sourceMappingURL=sport.css.map */
