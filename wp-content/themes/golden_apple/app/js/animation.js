@@ -1,37 +1,51 @@
-document.addEventListener("DOMContentLoaded",()=>{
+window.onload = ()=>{
+$('.preloader').css('display','none');
 var navbut = document.getElementById('nav_but');
-var trigger = true;
+var menu = document.getElementById('burger_nav');
+var trigger =true;
 $('.navigation>li>a').css('color','#eeb111').css('text-decoration','none');
 $('.navigation>li').mouseover(function(){
     TweenMax.to($(this), .5, {y:-5, ease: Power3.easeOut});
     }).mouseleave(function(){TweenMax.to($(this), .5, {y:5, ease: Power3.easeOut});});
        
-
+   
 TweenMax.set($('.fa-times'),{rotation:90});
-navbut.addEventListener('click',()=>{
+
+navbut.addEventListener('click',function(){
     
-    if(trigger === true){
-        
-        TweenMax.from($('#menu'), 1.5, {x:-4000, ease: Power3.easeOut,delay:1});
+    if(trigger == true){
+     
+        menu.style.transform = 'translateX(0)';
+        $('.logo').css('opacity','0');
+        TweenMax.from($('#menu'), 1.9, {x:-4000, ease: Power3.easeOut,delay:1,onComplete:function(){
+            trigger=false;
+        }});
         TweenMax.from($('.navigation'), 1.5, {x:600, ease: Power3.easeOut,delay:1});
         TweenMax.from($('.background'), 1.5, {x:2000, ease: Power3.easeOut,delay:0.4});
         TweenMax.to($('.fa-bars'),0.5,{rotation:-90,ease: Power3.easeOut});
         TweenMax.to($('.fa-times'),0.5,{rotation:0,ease: Power3.easeOut});
         TweenMax.staggerFrom(".navigation>li", 1, {x:300,opacity:0, stagger:0.2,delay:1,ease: Power4.easeOut});
-        $('.logo').css('opacity','0');
-        trigger = false;
+        
+       
+            
+       
+    
     }
     else{
         
+        menu.style.transform = 'translateX(110%)';
         $('.logo').css('opacity','1');
         
         TweenMax.to($('.fa-bars'),0.5,{rotation:0,ease: Power3.easeOut});
-        TweenMax.to($('.fa-times'),0.5,{rotation:90,ease: Power3.easeOut});
-        trigger =true;
+        TweenMax.to($('.fa-times'),0.5,{rotation:90,ease: Power3.easeOut,onComplete:function(){
+            trigger=true;
+        }});
+       
     }
 });  
     TweenMax.from($('.main_wrap>h1'), 2.5, {opacity:0,y:200, ease: Power3.easeOut,delay:0});
-    TweenMax.from($('.main_wrap>p'), 2.5, {opacity:0,y:200, ease: Power3.easeOut,delay:0.5});
+    TweenMax.from($('.sport_col>p'), 2.5, {opacity:0,x:200, ease: Power3.easeOut,delay:1.5});
+    TweenMax.from($('.sport_col>img'), 2.5, {opacity:0,x:-200, ease: Power3.easeOut,delay:1.5});
     TweenMax.from($('.bar-line'), 2, {x:100, ease: Power3.easeOut,delay:2.7});
     TweenMax.from($('#golden'), 1.5, {x:-4000, ease: Power3.easeOut});
     TweenMax.from($('#apple'), 1.5, {x:4000, ease: Power3.easeOut});
@@ -81,4 +95,4 @@ $(window).bind('mousewheel', function(event) {
         TweenMax.to(this, duration / 4, {y:-50, ease:Power2.easeOut});
         TweenMax.to(this, duration / 2, {y:0, ease:Bounce.easeOut, delay:duration / 4});
       });
-});
+};

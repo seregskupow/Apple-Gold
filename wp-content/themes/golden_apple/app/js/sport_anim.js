@@ -16,6 +16,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
     TweenMax.staggerFrom(".crue_col", 1, {scale:0,y:300,opacity:0, stagger:0.2,delay:1,ease: Power4.easeOut});
-    TweenMax.from($('#crue_title'), 1.5, {y:200, ease: Power4.easeOut,delay:0.4});
+    TweenMax.from($('#title'), 1.5, {y:200, ease: Power4.easeOut,delay:0.4});
     TweenMax.from($('.line'), 2, {scale:0, ease: Power4.easeOut,delay:1.2});
 })

@@ -1,12 +1,7 @@
 @media screen and (max-width: 992px) {
-  header #golden, header #apple {
+  header #golden,
+  header #apple {
     font-size: 350px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #section_one .section_one_wrapper .cards {
-    width: 80%;
   }
 }
 
@@ -18,20 +13,90 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .sidebar {
-    top: 0;
-    right: 0px;
-    height: 98px;
+@media screen and (max-width: 992px) {
+  #section_one .section_one_wrapper .cards {
+    width: 80%;
+  }
+  #special .cards {
     width: 100%;
   }
-  .sidebar .fa-bars {
+  #special .cards .slick-list {
+    margin: 0 0px;
+    /* the parent */
+  }
+  #special .cards .slick-list .slick-slide {
+    margin: 0 60px;
+  }
+  #special .cards .slick-list .card_ .card_yellow {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .fa-arrow-right,
+  .fa-arrow-left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .left_side {
+    width: 100%;
+  }
+  header #golden,
+  header #apple {
+    top: 6%;
+    font-size: 200px;
+  }
+  header #apple {
+    -webkit-transform: translate(0%, 200%);
+            transform: translate(0%, 200%);
+  }
+  header .hero_img {
+    margin-left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+  header .hero_img .square {
+    display: none;
+  }
+  header .hero_img .horizont_line {
+    width: 50%;
+  }
+  header .hero_img .vert_line {
+    display: none;
+  }
+  #burger_nav {
+    top: 42px;
+  }
+  .sidebar {
+    left: 0;
+    top: 0;
+    height: 98px;
+    width: 100%;
+    max-width: 767px !important;
+  }
+  .sidebar #nav_but {
+    overflow: hidden !important;
+  }
+  #burger_nav #menu p {
+    font-size: 50px;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  #burger_nav .navigation {
+    top: 25%;
     right: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+    font-size: 40px;
   }
   .logo {
-    max-width: 250px;
-    position: fixed;
-    left: 20px;
+    display: none;
   }
   #activities .activ_wrap .activ_item {
     position: relative;
@@ -41,6 +106,9 @@
     z-index: 1;
     background: rgba(0, 0, 0, 0.7);
     padding: 0;
+  }
+  #activities .activ_wrap .activ_item .activ_info .activ_info_wrap .activ_info_text {
+    color: #eeb111;
   }
   #activities .activ_wrap .activ_item .activ_img {
     position: absolute;
@@ -52,24 +120,98 @@
     z-index: -1;
     padding: 0;
   }
+  footer .footer_wrapper {
+    width: 95%;
+  }
+  footer .footer_wrapper h1 {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+  footer .footer_wrapper .contact_wrap {
+    padding: 10px !important;
+    margin: 0 auto;
+  }
+  footer .footer_wrapper .contact_wrap .contact-col-wrap {
+    margin: 0 auto;
+    width: 95%;
+  }
+  footer .footer_wrapper .contact_wrap .contact-col-wrap .social_block {
+    width: 95% !important;
+  }
 }
 
 @media screen and (max-width: 620px) {
-  .logo_wrap img {
-    max-width: 280px !important;
+  footer .footer_wrapper .contact_wrap .logo_wrap {
+    width: 280px;
   }
-  #burger_nav #menu p {
-    font-size: 150px;
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+  footer .footer_wrapper .contact_wrap .logo_wrap img {
+    max-width: 280px;
   }
-  #burger_nav .navigation {
-    height: 50vh;
+  #special .cards .slick-list {
+    /* the parent */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .off_item {
+    min-width: 500px !important;
+  }
+  #special .cards {
+    width: 100%;
+  }
+  #special .cards .card_ .card_yellow {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #special .cards .card_ {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  #offer .offer_wrapper .offer_slider .off_item {
+    -webkit-transform: scale(0.7) translateX(-50px);
+            transform: scale(0.7) translateX(-50px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #offer .offer_wrapper .offer_slider .off_item {
+    min-width: 420px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #crue .crue_container {
+    width: 90%;
+  }
+  #crue .crue_container .title {
     width: 90vw;
-    left: 15px;
-    right: 0;
-    padding: 50px 50px;
-    top: 300px;
+  }
+  #crue .crue_container .title h1 {
+    font-size: 50px;
+  }
+  #crue .crue_container .title .line {
+    width: 80%;
+  }
+  #sport_section .main_wrap {
+    width: 90%;
+  }
+  #sport_section .main_wrap .title {
+    width: 90vw;
+  }
+  #sport_section .main_wrap .title h1 {
+    font-size: 50px;
+  }
+  #sport_section .main_wrap .title .line {
+    width: 80%;
+  }
+  #sport_section .main_wrap .sport_row .sport_col {
+    padding-bottom: 30px;
+  }
+  #sport_section .main_wrap .sport_row .sport_col:nth-of-type(0) {
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 /*# sourceMappingURL=media.css.map */

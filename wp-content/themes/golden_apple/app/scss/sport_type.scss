@@ -1,0 +1,53 @@
+@import "variables";
+
+#sport_section{
+
+
+    & .main_wrap{
+        width: 70%;
+        margin:0 auto;
+        margin-top: 150px;
+        padding-bottom:200px; 
+
+        & .title{
+            overflow:hidden;
+            width: 60vw;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 100px;
+            position: relative;
+            & h1{
+                color: $lightgold;
+                font-size:150px;
+                font-family: 'Alfa Slab One', cursive;
+            }
+
+            & .line{
+                position: absolute;
+                top: 99%;
+                height: 2px;
+                width: 60%;
+                background: $golden;
+                left: 50%;
+                transform:translateX(-50%);
+                transform-origin: right;
+            }
+        }
+
+        & .sport_row{
+
+            & .sport_col{
+                overflow:hidden;
+                & p{
+                    color: $lightgold;
+                    font-size:20px;
+                }
+
+                & img{
+                    object-fit: cover;
+                }
+            }
+        }
+       
+    }
+}

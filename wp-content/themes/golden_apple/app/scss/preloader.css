@@ -1,0 +1,45 @@
+.preloader {
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #eeaf1105), color-stop(1%, transparent)) 1px 0, #0f0f0f;
+  background: linear-gradient(90deg, #eeaf1105 1%, transparent 1%) 1px 0, #0f0f0f;
+  background-size: 200px .09px;
+  z-index: 150;
+  position: absolute;
+}
+
+.circle {
+  border-radius: 190px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.circle1 {
+  background-color: #eeaf1163;
+  width: 200px;
+  height: 200px;
+  margin-top: -120px;
+  margin-left: -120px;
+}
+
+.circle2 {
+  background-color: #eeaf1183;
+  width: 130px;
+  height: 130px;
+  margin-top: -85px;
+  margin-left: -85px;
+}
+
+.circle3 {
+  background-color: #eeb111;
+  width: 60px;
+  height: 60px;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+/*# sourceMappingURL=preloader.css.map */

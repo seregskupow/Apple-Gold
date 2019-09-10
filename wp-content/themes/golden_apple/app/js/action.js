@@ -3,17 +3,18 @@
     var navbut = document.getElementById('nav_but');
     var menu = document.getElementById('burger_nav');
     var side = document.querySelector('.sidebar');
-    navbut.addEventListener('click',()=>{
-        if(trigger === true){
-            menu.style.transform = 'translateX(0)';
-            trigger = false;
-        }
-        else{
-            menu.style.transform = 'translateX(110%)';
-            trigger =true;
-        }
 
-    });
+    // navbut.addEventListener('click',()=>{
+    //     if(trigger === true){
+    //         menu.style.transform = 'translateX(0)';
+    //         trigger = false;
+    //     }
+    //     else{
+    //         menu.style.transform = 'translateX(110%)';
+    //         trigger =true;
+    //     }
+
+    // });
 
    
 
@@ -115,7 +116,7 @@ function initMap() {
     });
 
 var icon = {
-url: "img/icon.svg", // url
+url: "https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png", // url
 scaledSize: new google.maps.Size(50, 50), // scaled size
 
 };
@@ -127,5 +128,4 @@ icon: icon,
 size: new google.maps.Size(100, 100),
 animation: google.maps.Animation.DROP,
     });
-marker.addListener('click', toggleBounce);
   }

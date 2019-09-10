@@ -1,8 +1,4 @@
-<?php
-    /*
-    Template Name: Our crue
-    */
-?>
+
 <?php get_header();?>
 
 

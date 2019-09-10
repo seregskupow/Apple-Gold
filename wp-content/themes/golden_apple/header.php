@@ -16,6 +16,8 @@
 </head>
 
 <body>
+    <?php get_template_part('preloader');?>
+
     <nav id="burger_nav">
         <div class="background"></div>
         <div id="menu">
@@ -27,8 +29,8 @@
 	
 	'menu'            => 'page_menu',
 	'container'       => 'ul', // блок, в который нужно поместить меню, укажите false, чтобы не помещать в блок
-	'container_class' => 'navigation grey_background', // css-класс блока
-	'menu_class'      => 'navigation grey_background', // css-класс меню
+	'container_class' => 'navigation', // css-класс блока
+	'menu_class'      => 'navigation', // css-класс меню
 	
 	'echo'            => true, // вывести или записать в переменную
 	'fallback_cb'     => 'wp_page_menu', // какую функцию использовать если меню не существует, укажите false, чтобы не использовать ничего
@@ -55,4 +57,4 @@
                 </div>
         </div>
         </div>
-        <img src="<?php bloginfo('template_directory');?>/app/img/apple_logo.png" alt="" class="logo">
+        <a href="<?php echo get_permalink(9); ?>"><img src="<?php bloginfo('template_directory');?>/app/img/apple_logo.png" alt="" class="logo"></a>

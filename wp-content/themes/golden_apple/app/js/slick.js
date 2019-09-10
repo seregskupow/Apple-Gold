@@ -1,11 +1,11 @@
 
 $(document).ready(function(){
     $('.offer_slider').slick({
-      arrows:true,
+      arrows:false,
         dots: true,
         infinite: false,
         speed: 300,
-        
+        centerMode: true,
         slidesToScroll:1,
         draggable: true,
         variableWidth: true,
@@ -32,7 +32,7 @@ centerMode: false,
             breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 1,
+              slidesToScroll: 1
               
             }
           },
@@ -40,7 +40,8 @@ centerMode: false,
             breakpoint: 778,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToScroll: 1
+            
               
             }
           },
@@ -57,6 +58,7 @@ centerMode: false,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              centerMode: false
               
             }
           }
@@ -75,6 +77,7 @@ centerMode: false,
         slidesToScroll:1,
         nextArrow:$('.next'),
         prevArrow:$('.prev'),
+        
 
         responsive: [
           {
@@ -87,7 +90,7 @@ centerMode: false,
             }
           },
           {
-            breakpoint: 1024,
+            breakpoint: 1170,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -96,10 +99,11 @@ centerMode: false,
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 992,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              centerMode: true,
             }
           },
           {

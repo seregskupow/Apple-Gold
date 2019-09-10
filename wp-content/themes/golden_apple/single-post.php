@@ -3,6 +3,7 @@
         include(TEMPLATEPATH."/sports.php"); 
     }
     if(in_category(4)) {
-        include(TEMPLATEPATH."/additional.php"); 
+        include(TEMPLATEPATH."/sports.php");
     }
 ?>
+ <!-- additional.php -->

@@ -5,7 +5,7 @@
                 <div class="contact-row row">
                     <div class="contact-col col col-12 col-md-6 col-lg-4">
                         <div class="contact-col-wrap">
-                            <h3>contacts</h3>
+                            <h3>adress</h3>
                             <?php
            
             

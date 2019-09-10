@@ -8,7 +8,7 @@
         margin-top: 100px;
         margin-bottom: 300px;
 
-        & .crue_title{
+        & .title{
             overflow:hidden;
             width: 90%;
             margin: 0 auto;
@@ -38,7 +38,9 @@
             & .crue_col{
                 margin-bottom: 30px;
                 height: 500px;
+                width: 500px!important;
                 overflow:hidden;
+                position: relative;
                 & h2{
                     text-align: center;
                     background-color: $golden;
@@ -46,11 +48,13 @@
                     text-transform:uppercase;
                     font-family: 'Alfa Slab One', cursive;
                     color:$grey;
+                    font-size: 20px;
+                    padding:14px 0;
 
                 }
                 & img{
                     width: 100%;
-                    max-height: 500px;
+                    height: 500px;
                     object-fit: cover;
                 }
                 & h2:nth-of-type(2){
@@ -60,7 +64,7 @@
                     border:1px solid $golden;
                     width: 70%;
                     margin:0 auto;
-                    font-size: 40px;
+                    font-size: 30px;
                     background-color: $golden;
                     background-image: radial-gradient($grey 15%, transparent 5%);
                     background-position: 0 0, 20px 20px;

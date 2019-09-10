@@ -1,0 +1,49 @@
+#sport_section .main_wrap {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding-bottom: 200px;
+}
+
+#sport_section .main_wrap .title {
+  overflow: hidden;
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#sport_section .main_wrap .title h1 {
+  color: #eeaf1163;
+  font-size: 150px;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+#sport_section .main_wrap .title .line {
+  position: absolute;
+  top: 99%;
+  height: 2px;
+  width: 60%;
+  background: #eeb111;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#sport_section .main_wrap .sport_row .sport_col {
+  overflow: hidden;
+}
+
+#sport_section .main_wrap .sport_row .sport_col p {
+  color: #eeaf1163;
+  font-size: 20px;
+}
+
+#sport_section .main_wrap .sport_row .sport_col img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=sport_type.css.map */

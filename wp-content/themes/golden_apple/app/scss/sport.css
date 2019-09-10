@@ -1,16 +1,97 @@
-#sport_section .main_wrap {
-  width: 50%;
+#crue .crue_container {
+  width: 80%;
   margin: 0 auto;
-  padding: 200px 0;
+  margin-top: 100px;
+  margin-bottom: 300px;
 }
 
-#sport_section .main_wrap h1 {
-  color: #eeb111;
-  font-size: 100px;
+#crue .crue_container .title {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+#crue .crue_container .title h1 {
+  color: #eeaf1163;
+  font-size: 150px;
   font-family: 'Alfa Slab One', cursive;
 }
 
-#sport_section .main_wrap p {
+#crue .crue_container .title .line {
+  position: absolute;
+  top: 90%;
+  height: 2px;
+  width: 60%;
+  background: #eeb111;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+#crue .crue_container .crue_row .crue_col {
+  margin-bottom: 30px;
+  height: 500px;
+  width: 500px !important;
+  overflow: hidden;
+  position: relative;
+}
+
+#crue .crue_container .crue_row .crue_col h2 {
+  text-align: center;
+  background-color: #eeb111;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: 'Alfa Slab One', cursive;
+  color: #0f0f0f;
   font-size: 20px;
+  padding: 14px 0;
+}
+
+#crue .crue_container .crue_row .crue_col img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#crue .crue_container .crue_row .crue_col h2:nth-of-type(2) {
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+  padding-bottom: 400px;
+  padding-top: 20px;
+  border: 1px solid #eeb111;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 30px;
+  background-color: #eeb111;
+  background-image: radial-gradient(#0f0f0f 15%, transparent 5%);
+  background-position: 0 0, 20px 20px;
+  background-size: 20px 20px;
+  color: #0f0f0f;
+}
+
+#crue .crue_container .crue_row .crue_col .about {
+  -webkit-transform: translateY(-516px);
+          transform: translateY(-516px);
+  background: #0f0f0f;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #eeb111;
+  color: #eeaf1163;
+  padding-bottom: 150px;
+}
+
+#crue .crue_container .crue_row .crue_col .about .about_wrap {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none !important;
 }
 /*# sourceMappingURL=sport.css.map */
